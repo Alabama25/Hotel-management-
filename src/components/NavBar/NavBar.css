@@ -1,0 +1,63 @@
+.nav-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 13px;
+  z-index: 1;
+}
+.hotel-name1{
+  font-size: 27px;
+}
+.span1{
+  color: rgb(245, 113, 5);
+}
+.navlink-div{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/* .nav-p{ */
+  /* font-size: 15px; */
+  /* color: rgba(202, 197, 197, 10); */
+/* } */
+.Not-Active{
+  font-size: 13px;
+  color: rgba(202, 197, 197, 10);
+  text-decoration: none;
+}
+.Active{
+  font-size: 15px;
+  color: rgb(245, 113, 5);
+  text-decoration: none;
+}
+.Not-Active:hover{
+  color: rgb(245, 113, 5);
+  text-decoration: none;
+}
+.button-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button1{
+  padding: 10px 20px;
+  /* font-weight: bold; */
+  border: none;
+  font-size: 13px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(207, 111, 22, 0.6);
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.button1:active{
+  background-color: rgb(245, 113, 5);
+}

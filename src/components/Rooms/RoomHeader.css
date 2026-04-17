@@ -1,0 +1,118 @@
+body{
+  background-color: rgba(117, 97, 74, 0.7);
+}
+.header-container{
+  display: flex;
+  direction: column;
+  height: 80vh;
+  width: 80%;
+  /* background-color: aqua; */
+  color: white;
+  margin: auto;
+  position: relative;
+  margin-top: 5px;
+}
+.check-div{
+  background-color: rgba(17, 16, 16, 0.2);
+  color: white;
+  height: 13%;
+  display: flex;
+  /* justify-content: space-between; */
+  width: 70%;
+  position: absolute;
+  z-index: 1;
+  top: 81%;
+  margin-left: 110px;
+  /* justify-content: space-around; */
+  border-radius: 20px;
+  padding: 5px;
+  gap: 4rem;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 100px;
+  padding-bottom: 30px;
+}
+.button-div2{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* margin-top: 30px; */
+  /* background-color: aqua; */
+}
+.check-button{
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(51, 42, 34) ;
+  /* margin-top: 50px; */
+}
+.check-button:active{
+  background-color: rgb(24, 21, 19) ;
+}
+
+.input1{
+  width: 200px;
+  height: 30px;
+}
+.input2{
+  width: 200px;
+  height: 30px;
+}
+.img-div{
+  width: 100%;
+}
+.img1{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.nav-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 13px;
+  z-index: 1;
+}
+.hotel-name1{
+  font-size: 27px;
+}
+.span1{
+  color: rgb(245, 113, 5);
+}
+.navlink-div{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-p{
+  font-size: 15px;
+  color: rgba(202, 197, 197, 10);
+}
+.nav-p:hover{
+  color: rgb(245, 113, 5);
+}
+.button-div1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.button1{
+  padding: 10px 20px;
+  /* font-weight: bold; */
+  border: none;
+  font-size: 13px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(51, 42, 34, 0.6);;
+}
+.button1:active{
+  background-color: rgb(51, 42, 34);
+}

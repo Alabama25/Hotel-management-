@@ -1,0 +1,6 @@
+.body-div{
+  /* margin: 2px; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
