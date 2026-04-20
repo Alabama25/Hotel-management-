@@ -1,54 +1,67 @@
-import './BookingPage.css'
-import main2 from '../../assets/main2.jpg'
 import { NavLink } from 'react-router'
+import { Home, BedDoubleIcon, Book, Phone } from 'lucide-react'
 
-function BookingPage(){
-  return(
-    <>
-    <div className='main-div'>
-      <div className='div1'>
-        <div className='div1-sub1'><p><span className='Span1'>A1</span>Lounge</p></div>
-        <div className='div1-sub2'>
-          <div className='div1-sub2-est1'><p>Home</p></div>
-          <div className='div1-sub2-est2'><p>Rooms</p></div>
-          <div className='div1-sub2-est3'><p>Bookings</p></div>
-          <div className='div1-sub2-est4'><p>Contact</p></div>
+function BookingPage() {
+  return (
+    <div className="flex h-screen bg-[rgb(245,241,236)] font-sans">
+
+      <div className="w-[80px] md:w-[100px] bg-white shadow-md flex flex-col items-center py-6 gap-10">
+        <div className="text-lg font-bold">
+          <span className="text-amber-600">A1</span>Lounge
+        </div>
+        <div className="flex flex-col gap-10 mt-10">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `flex justify-center items-center p-2 rounded-lg transition ${
+                isActive ? "text-amber-600 bg-amber-100" : "text-gray-500 hover:text-amber-600"
+              }`
+            }
+          >
+            <Home />
+          </NavLink>
+          <NavLink
+            to="/Rooms"
+            className={({ isActive }) =>
+              `flex justify-center items-center p-2 rounded-lg transition ${
+                isActive ? "text-amber-600 bg-amber-100" : "text-gray-500 hover:text-amber-600"
+              }`
+            }
+          >
+            <BedDoubleIcon />
+          </NavLink>
+          <NavLink
+            to="/Bookings"
+            className={({ isActive }) =>
+              `flex justify-center items-center p-2 rounded-lg transition ${
+                isActive ? "text-amber-600 bg-amber-100" : "text-gray-500 hover:text-amber-600"
+              }`
+            }
+          >
+            <Book />
+          </NavLink>
+          <NavLink
+            to="/Contact"
+            className={({ isActive }) =>
+              `flex justify-center items-center p-2 rounded-lg transition ${
+                isActive ? "text-amber-600 bg-amber-100" : "text-gray-500 hover:text-amber-600"
+              }`
+            }
+          >
+            <Phone />
+          </NavLink>
         </div>
       </div>
-      <div className='div2'>
-        <div className='div2-sub1'>
-          <div className='div2-sub1-ext1'><p>Room View & Details</p></div>
-          <div className='div2-sub1-ext2'><p>Room No: 300</p></div>
-        </div>
-        <div className='div2-sub2'>
-            <div className='div2-sub2-exras1'>
-              <div className='sub2-extra1-est1'>
-                <div className='extras1'><p>size:40sq</p></div>
-                <div className='extras2'><p>1st floor</p></div>
-              </div>
-              <div className='img-div'><img src={main2} className='img'/></div>
-            </div>
-            <div className='div2-sub2-exras2'>
-              <div className='sub2-exras2-est1'><p>Input your details</p></div>
-              <div className='sub2-exras2-est2'><p>Name:</p><input type="text" className='input'/></div>
-              <div className='sub2-exras2-est3'><p>Phone No:</p><input type="text" className='input'/></div>
-              <div className='sub2-exras2-est4'>
-                <div>
-                  <p>CHECK-IN</p>
-                  <p>Date</p>
-                </div>
-                <div>
-                  <p>CHECK-OUT</p>
-                  <p>Date</p>
-                </div>
-              </div>
-              <div className='sub2-exras2-est5'><button className='booking-button'>Place Booking</button></div>
-            </div>
-        </div>
-        <div className='div2-sub3'></div>
+      <div className="flex-1 bg-white p-6">
+        <h1 className="text-2xl font-serif font-bold text-[rgb(40,30,20)]">
+          Booking Dashboard
+        </h1>
+        <p className="text-gray-500 mt-2">
+          Manage your rooms, bookings and hotel operations here.
+        </p>
       </div>
     </div>
-    </>
   )
 }
+
 export default BookingPage

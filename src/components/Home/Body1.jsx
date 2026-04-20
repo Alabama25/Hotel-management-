@@ -1,32 +1,59 @@
-import { MapPinnedIcon, Bath } from 'lucide-react'
-import './Body1.css'
+import { MapPinnedIcon, Bath, Users, Tag } from 'lucide-react'
 
-function Body1(){
-  return(
-    <>
-      <div className='body-div1'>
-        <div className='body-div1-sub1'>
-          <div className='sub1-extras1'><MapPinnedIcon className = "icon"/></div>
-          <div className='sub1-extras2'><p>Located in the heart of Ago Iwoye city</p></div>
-          <div className='sub1-extras3'><p>Ideally located in the city's heart for easy access and convinience</p></div>
-        </div>
-        <div className='body-div1-sub2'>
-          <div className='sub2-extras1'><p><Bath className = "icon"/></p></div>
-          <div className='sub2-extras2'><p>Luxurious, modern, and comfortable</p></div>
-          <div className='sub2-extras3'><p>Experience a luxurious, modern and fully equipped space for comfort</p></div>
-        </div>
-        <div className='body-div1-sub3'>
-          <div className='sub3-extras1'><p></p></div>
-          <div className='sub3-extras2'><p>Friendly and welcoming staff</p></div>
-          <div className='sub3-extras3'><p>Our friendly and welcoming staff ensure a delightful stay everytime</p></div>
-        </div>
-        <div className='body-div1-sub4'>
-          <div className='sub4-extras1'><p></p></div>
-          <div className='sub4-extras2'><p>Best prices and great offers</p></div>
-          <div className='sub4-extras3'><p>Enjoy unbeatable prices with fantastic offers tailored just for you</p></div>
-        </div>
+function Body1() {
+  return (
+    <div className="min-h-[40vh] bg-white flex flex-wrap justify-center gap-6 p-6">
+
+      <div className="w-[250px] bg-white shadow-sm hover:shadow-lg transition duration-300 rounded-xl flex flex-col items-center text-center p-6">
+        <MapPinnedIcon className="h-10 w-10 text-blue-600 mb-4" />
+
+        <h2 className="text-[20px] font-bold text-[rgb(49,27,10)] mb-2">
+          Located in the heart of Ago Iwoye city
+        </h2>
+
+        <p className="text-[rgb(173,149,130)] text-[15px]">
+          Ideally located in the city's heart for easy access and convenience
+        </p>
       </div>
-    </>
+
+      <div className="w-[250px] bg-white shadow-sm hover:shadow-lg transition duration-300 rounded-xl flex flex-col items-center text-center p-6">
+        <Bath className="h-10 w-10 text-emerald-600 mb-4" />
+
+        <h2 className="text-[20px] font-bold text-[rgb(49,27,10)] mb-2">
+          Luxurious, modern, and comfortable
+        </h2>
+
+        <p className="text-[rgb(173,149,130)] text-[15px]">
+          Experience a luxurious, modern and fully equipped space for comfort
+        </p>
+      </div>
+
+      <div className="w-[250px] bg-white shadow-sm hover:shadow-lg transition duration-300 rounded-xl flex flex-col items-center text-center p-6">
+        <Users className="h-10 w-10 text-orange-500 mb-4" />
+
+        <h2 className="text-[20px] font-bold text-[rgb(49,27,10)] mb-2">
+          Friendly and welcoming staff
+        </h2>
+
+        <p className="text-[rgb(173,149,130)] text-[15px]">
+          Our friendly and welcoming staff ensure a delightful stay every time
+        </p>
+      </div>
+
+      <div className="w-[250px] bg-white shadow-sm hover:shadow-lg transition duration-300 rounded-xl flex flex-col items-center text-center p-6">
+        <Tag className="h-10 w-10 text-red-500 mb-4" />
+
+        <h2 className="text-[20px] font-bold text-[rgb(49,27,10)] mb-2">
+          Best prices and great offers
+        </h2>
+
+        <p className="text-[rgb(173,149,130)] text-[15px]">
+          Enjoy unbeatable prices with fantastic offers tailored just for you
+        </p>
+      </div>
+
+    </div>
   )
 }
+
 export default Body1

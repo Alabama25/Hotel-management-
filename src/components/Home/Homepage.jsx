@@ -1,4 +1,4 @@
-import './Homepage.css'
+
 import Header from './Header'
 import Body1 from './Body1'
 import Body2 from './Body2'
@@ -10,7 +10,7 @@ function HomePage(){
   return(
     <>
       <Header />
-      <div className='body-div'>
+      <div className='flex flex-col w-[100] bg-[rgb(245,241,236)]'>
         <Body1 />
         <Body2 />
         <Body3 />
